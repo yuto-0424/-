@@ -43,10 +43,10 @@ from linebot.exceptions import (
 app = Flask(__name__)
 
 #環境変数取得
-YOUR_CHANNEL_ACCESS_TOKEN = os.environ["0ZVOkcQGp5HUEz+a1tRYIpcrLGiLSwSA4VISRSHsB+JJNChMXW5aOj/evLvh3e4iNVbimMiK05GS/W0KGEFo9ZvFQ3 Kto7mpEQh5unm4aJz+ヒットKYoW8qn/0KbDenX1BvUY1b8GgLoeBW1Fu1W/ZcAdB04t89/1O/w1cDnyilFU="]
+YOUR_CHANNEL_ACCESS_TOKEN = os.environ["YOUR_CHANNEL_ACCESS_TOKEN"]
 YOUR_CHANNEL_SECRET = os.environ["YOUR_CHANNEL_SECRET"]
 
-line_bot_api = LineBotApi(0ZVOkcQGp5HUEz+a1tRYIpcrLGiLSwSA4VISRSHsB+JJNChMXW5aOj/evLvh3e4iNVbimMiK05GS/W0KGEFo9ZvFQ3 Kto7mpEQh5unm4aJz+ヒットKYoW8qn/0KbDenX1BvUY1b8GgLoeBW1Fu1W/ZcAdB04t89/1O/w1cDnyilFU=)
+line_bot_api = LineBotApi(YOUR_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(YOUR_CHANNEL_SECRET)
 
 # ユーザが選択した災害が入る変数
